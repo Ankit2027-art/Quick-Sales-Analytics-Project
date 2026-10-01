@@ -247,7 +247,7 @@ Based on the analysis, the following areas can be considered for further busines
 
 
 
-# 📁 Excel Project Structure
+#  Project Structure
 
 ```text
 Excel/
