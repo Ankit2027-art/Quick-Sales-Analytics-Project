@@ -1,40 +1,50 @@
 # Quick-Commerce Sales Analytics — Excel Analysis
 
-## About the Project
+##  About the Project
 
-This is the Excel part of my **Quick-Commerce Sales Analytics** project.
+This repository contains the **Excel analysis** component of my **Quick-Commerce Sales Analytics** project.
 
-I created a synthetic sales dataset to practice and understand how sales data can be analyzed in a real business scenario. In this stage, I used Excel to work with the data, calculate important KPIs, and find useful patterns related to customers, products, categories, regions, and profit.
+The project uses a **synthetic Quick-Commerce sales dataset** to simulate a real-world retail/e-commerce analytics scenario. Excel was used to clean, transform, analyze, and summarize the data to identify patterns in sales, customers, products, categories, regions, and profitability.
 
-The project will later be extended with **SQL and Python analysis**.
+The complete project also includes **SQL and Python analysis** as separate components.
 
 ---
 
-##  What I Wanted to Find
+##  Final Analysis Workbook
 
-The main purpose of this analysis was to answer questions like:
+The complete Excel analysis workbook is available on Google Drive:
+
+ **[Open Final Analysis Workbook](https://drive.google.com/drive/folders/1Hs6Un_FjMjEbBL34xnvaBJuGpY-F-zfn?usp=drive_link)**
+
+The workbook contains the complete analysis, calculations, KPIs, and business insights developed during the Excel stage.
+
+---
+
+#  Business Questions
+
+The analysis was designed to answer questions such as:
 
 - What are the total sales and profit?
-- How are sales changing month by month?
-- Which products are selling the most?
-- Which products are generating more profit?
-- Which categories are performing well?
-- Which customers are contributing more to sales?
-- How are different regions performing?
-- Are there any products making a loss?
-- Which areas need more attention?
+- How do sales change month by month?
+- Which products generate the highest sales?
+- Which products generate the highest profit?
+- Which categories perform well?
+- Which customers contribute the most to sales?
+- How do different regions perform?
+- Which products have low or negative profitability?
+- Which areas require further attention?
 
 ---
 
-## Dataset
+#  Dataset
 
-The dataset is **synthetic** and was created for learning and portfolio purposes.
+The dataset is **synthetic** and was created specifically for learning, analysis, and portfolio purposes.
 
-It is divided into four main tables.
+The analysis is based on four primary tables.
 
 ### Customers
 
-Customer information such as:
+Contains customer-related information:
 
 - Customer_ID
 - Customer_Name
@@ -46,7 +56,7 @@ Customer information such as:
 
 ### Products
 
-Product-related details:
+Contains product information:
 
 - Product_ID
 - Product_Name
@@ -58,7 +68,7 @@ Product-related details:
 
 ### Orders
 
-Order-level information:
+Contains order-level information:
 
 - Order_ID
 - Order_Date
@@ -68,7 +78,7 @@ Order-level information:
 
 ### Order_Details
 
-Product-level details for each order:
+Contains product-level transaction information:
 
 - Order_ID
 - Product_ID
@@ -77,13 +87,15 @@ Product-level details for each order:
 - Sales
 - Profit
 
----
+> **Dataset Note:** The dataset is completely synthetic. It does not contain real customer transactions, confidential information, or proprietary company data.
 
-## Tools Used
 
-For this part of the project, I mainly worked with **Microsoft Excel**.
 
-Some of the Excel features and functions I used were:
+# 🛠️ Tools & Excel Features
+
+The analysis was performed using **Microsoft Excel**.
+
+### Excel Features
 
 - Excel Tables
 - Sorting
@@ -112,13 +124,11 @@ TEXT
 EOMONTH
 ```
 
----
+# Analysis Performed
 
-# Analysis
+## 1. Sales Performance Analysis
 
-## 1. Sales Performance
-
-I started with the overall sales performance and calculated basic KPIs such as:
+Analyzed the overall sales performance using key business metrics such as:
 
 - Total Sales
 - Total Orders
@@ -127,27 +137,27 @@ I started with the overall sales performance and calculated basic KPIs such as:
 - Monthly Sales
 - Monthly Sales Growth
 
-This helped me get a basic idea of the overall business performance.
+This provided an overview of the overall business performance and sales trends.
 
----
 
 ## 2. Customer Analysis
 
-Customer data was analyzed to understand purchasing behavior.
+Customer-level analysis was performed to understand purchasing behavior and customer contribution.
 
-I looked at:
+The analysis included:
 
 - Top customers by sales
-- Number of orders placed by customers
+- Number of orders placed
 - Customer contribution to total sales
 - High-value customers
 - Customer purchasing patterns
 
----
 
 ## 3. Product Analysis
 
-For products, I compared sales and profitability using:
+Products were analyzed based on both sales performance and profitability.
+
+Key metrics included:
 
 - Total Sales
 - Quantity Sold
@@ -155,43 +165,40 @@ For products, I compared sales and profitability using:
 - Profit Margin
 - Product Ranking
 
-I also checked which products were performing poorly and which ones were generating higher profits.
+The analysis also identified products with comparatively lower performance and products generating higher profits.
 
----
 
 ## 4. Category Analysis
 
-I compared different categories based on:
+Different product categories were compared based on:
 
-- Sales
-- Profit
+- Total Sales
+- Total Profit
 - Profit Margin
 - Contribution to overall sales
 
-This helped in understanding that a category with higher sales is not necessarily the category with the highest profit margin.
+This analysis highlighted the difference between **sales performance and profitability**.
 
----
+
 
 ## 5. Regional Analysis
 
-I also compared sales performance across different regions.
-
-The analysis included:
+Regional performance was analyzed using:
 
 - Regional Sales
 - Regional Profit
 - Number of Orders
 - Contribution to Total Sales
 
-This gave a better understanding of how different regions were performing.
+This helped identify differences in business performance across regions.
 
----
 
-## Profitability Analysis
 
-Profitability was one of the important parts of the analysis.
+## 6. Profitability Analysis
 
-I calculated and compared:
+Profitability was one of the key areas of the analysis.
+
+The analysis included:
 
 - Total Sales
 - Total Cost
@@ -202,82 +209,81 @@ I calculated and compared:
 - Loss-making Products
 - High-margin Products
 
-This helped identify products and categories where sales and profit were different from each other.
+This helped identify situations where strong sales performance did not necessarily result in strong profitability.
 
----
 
+
+#  Key Findings
 
 ### Product Analysis
 
 - **Most Profitable Product:** Colgate Orange Drink 500ml
 - **Highest Profit Margin:** Amul Moong Dal Pack of 6
-- Some products were found to be loss-making and need further analysis.
+- Some products were identified as loss-making and require further investigation.
 
 ### Category Analysis
 
 - **Highest Total Profit:** Beverages
 - **Highest Profit Margin:** Beauty & Hygiene
 
-One thing I noticed from the analysis is that **high sales do not always mean high profitability**. Discounts, product costs, and selling prices can make a significant difference.
+### Overall Observation
 
----
+One of the important findings from the analysis was that **high sales do not necessarily mean high profitability**.
 
-# Excel Files
+Product cost, selling price, and discounts can significantly affect the final profit generated by a product.
+
+
+
+#  Business Recommendations
+
+Based on the analysis, the following areas can be considered for further business investigation:
+
+1. Investigate the reasons behind loss-making products.
+2. Review discounts applied to products with low profit margins.
+3. Focus on products and categories maintaining healthy margins.
+4. Analyze purchasing behavior of high-value customers.
+5. Compare regional performance to identify lower-contributing regions.
+6. Evaluate both sales and profitability before making product-level decisions.
+
+
+
+# 📁 Excel Project Structure
 
 ```text
 Excel/
 │
-├── Quick_Commerce_Sales_Analysis.xlsx
-├── README.md
+├── Final_Analysis/
+│   └── Quick_Commerce_Sales_Analysis.xlsx
 │
-└── screenshots/
-    ├── sales_analysis.png
-    ├── customer_analysis.png
-    ├── product_analysis.png
-    └── profitability_analysis.png
+├── Screenshots/
+│   ├── sales_analysis.png
+│   ├── customer_analysis.png
+│   ├── product_analysis.png
+│   └── profitability_analysis.png
+│
+└── README.md
 ```
 
----
 
-# What I Learned from the Analysis
 
-While working on the Excel analysis, I found that looking only at sales is not enough.
+#  What I Learned
 
-For example, a product can have good sales but still generate less profit because of its cost or discount. Similarly, some categories may have lower sales but better profit margins.
+Through this Excel analysis, I learned that business analysis should not rely on a single metric such as sales.
 
-Customer and regional analysis also helped in understanding where most of the business is coming from.
+A product may generate high revenue but still have relatively low profitability because of product cost or discounts. Similarly, a category with lower sales can sometimes generate stronger margins.
 
----
+Customer and regional analysis also provided a better understanding of where business revenue and profit are being generated.
 
-# Possible Business Actions
 
-Based on the analysis, some areas that can be looked into further are:
 
-1. Check the reason behind loss-making products.
-2. Review discounts on products with low profit margins.
-3. Focus on products and categories that maintain healthy margins.
-4. Identify high-value customers and understand their buying patterns.
-5. Compare regional performance to find areas with lower contribution.
-6. Consider both sales and profit before making product-level decisions.
-
----
-
-## Dataset Note
-
-The dataset used in this project is **synthetic**.
-
-It was created only for learning, analysis practice, and portfolio purposes. It does not contain real customer transactions or confidential company data.
-
----
-
-# Project Flow
+#  Overall Project Flow
 
 ```text
 Synthetic Dataset
        ↓
-Excel Data Cleaning
+Excel Data Understanding & Cleaning
        ↓
-Excel Analysis
+Excel Analysis & KPI Calculation
        ↓
 Sales Analysis
        ↓
@@ -289,18 +295,28 @@ Regional Analysis
        ↓
 Profitability Analysis
        ↓
-Insights & Recommendations
+Business Insights & Recommendations
        ↓
 SQL Analysis
        ↓
 Python Analysis
 ```
 
----
 
-## Project Details
 
-**Project:** Quick-Commerce Sales Analytics  
-**Current Analysis:** Excel  
-**Dataset:** Synthetic  
-**Main Areas:** Sales, Customers, Products, Regions & Profitability
+##  Project Details
+
+Project: Quick-Commerce Sales Analytics
+Analysis: Excel
+Dataset: Synthetic
+Tools: Microsoft Excel
+Focus Areas: Sales, Customers, Products, Categories, Regions & Profitability
+Additional Analysis: SQL & Python
+
+
+
+##  Disclaimer
+
+This project is created for **educational and portfolio purposes** using synthetic data.
+
+It does not represent actual transactions, customers, financial records, or confidential information from any real company.
