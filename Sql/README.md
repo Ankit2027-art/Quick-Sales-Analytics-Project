@@ -4,13 +4,14 @@
 
 This section contains the **SQL-based analysis** of the Quick-Commerce Sales Analytics project.
 
-The SQL analysis focuses on transforming business questions into structured database queries and extracting meaningful insights related to sales, customers, products, regions, and profitability.
+The analysis focuses on converting business questions into structured SQL queries and extracting meaningful insights related to **sales, customers, products, categories, regions, and profitability**.
 
-The analysis was performed using a relational database containing customer, product, order, and order-detail data.
+The project uses a relational database structure consisting of customer, product, order, and order-detail data.
 
----
+The SQL analysis is part of an end-to-end analytics project that also includes **Excel and Python analysis**.
 
-##  Objectives
+
+#  Objectives
 
 The main objectives of the SQL analysis were to:
 
@@ -18,14 +19,13 @@ The main objectives of the SQL analysis were to:
 - Perform data quality checks
 - Analyze overall business performance
 - Analyze customer behavior
-- Analyze product performance
-- Analyze category performance
-- Analyze regional performance
+- Analyze product and category performance
+- Compare regional performance
 - Analyze profitability
-- Solve real-world business questions using SQL
+- Solve practical business questions using SQL
 - Apply advanced SQL techniques for deeper analysis
 
----
+
 
 #  Database Structure
 
@@ -43,54 +43,53 @@ Customers
 
 Contains customer information:
 
-- Customer_ID
-- Customer_Name
-- Gender
-- Age
-- City
-- State
-- Region
+- `Customer_ID`
+- `Customer_Name`
+- `Gender`
+- `Age`
+- `City`
+- `State`
+- `Region`
 
 ### Products
 
 Contains product information:
 
-- Product_ID
-- Product_Name
-- Category
-- Sub_Category
-- Brand
-- Cost_Price
-- Selling_Price
+- `Product_ID`
+- `Product_Name`
+- `Category`
+- `Sub_Category`
+- `Brand`
+- `Cost_Price`
+- `Selling_Price`
 
 ### Orders
 
 Contains order-level information:
 
-- Order_ID
-- Order_Date
-- Customer_ID
-- Payment_Method
-- Order_Status
+- `Order_ID`
+- `Order_Date`
+- `Customer_ID`
+- `Payment_Method`
+- `Order_Status`
 
 ### Order_Details
 
 Contains transaction-level information:
 
-- Order_ID
-- Product_ID
-- Quantity
-- Discount
-- Sales
-- Profit
+- `Order_ID`
+- `Product_ID`
+- `Quantity`
+- `Discount`
+- `Sales`
+- `Profit`
 
----
 
-#  SQL Concepts Used
+# SQL Concepts Used
 
-The analysis covers both fundamental and advanced SQL concepts.
+The analysis covers fundamental as well as advanced SQL concepts.
 
-### Basic SQL
+## Basic SQL
 
 - `SELECT`
 - `WHERE`
@@ -100,7 +99,7 @@ The analysis covers both fundamental and advanced SQL concepts.
 - `DISTINCT`
 - `LIMIT`
 
-### Aggregate Functions
+## Aggregate Functions
 
 - `SUM()`
 - `AVG()`
@@ -108,39 +107,39 @@ The analysis covers both fundamental and advanced SQL concepts.
 - `MIN()`
 - `MAX()`
 
-### Joins
+## Joins
 
 - `INNER JOIN`
 - `LEFT JOIN`
 
-### Conditional Logic
+## Conditional Logic
 
 - `CASE`
 - Conditional aggregation
 
-### NULL Handling
+## NULL Handling
 
 - `IS NULL`
 - `IS NOT NULL`
 - `COALESCE()`
 
-### Date Analysis
+## Date Analysis
 
+- Date filtering
 - Date extraction
 - Monthly analysis
 - Year-based analysis
-- Date filtering
 
-### String Functions
+## String Functions
 
 - String manipulation
 - Text filtering
 - Pattern matching
 
-### Advanced SQL
+## Advanced SQL
 
 - Subqueries
-- CTEs
+- Common Table Expressions (CTEs)
 - Window Functions
 - `RANK()`
 - `DENSE_RANK()`
@@ -148,7 +147,6 @@ The analysis covers both fundamental and advanced SQL concepts.
 - `LAG()`
 - Running totals
 
----
 
 #  Analysis Performed
 
@@ -162,11 +160,13 @@ Performed checks for:
 - Key relationships
 - Invalid or unexpected values
 
----
+These checks helped validate the data before performing business analysis.
+
+
 
 ## 2. Overall Sales Analysis
 
-Analyzed:
+Analyzed key business metrics including:
 
 - Total Sales
 - Total Orders
@@ -175,54 +175,54 @@ Analyzed:
 - Total Profit
 - Profitability
 
----
+
 
 ## 3. Customer Analysis
 
-Identified:
+Analyzed customer-level performance to identify:
 
 - Top customers by sales
 - Customer order frequency
-- Customer contribution
+- Customer contribution to revenue
 - High-value customers
-- Customers with specific purchasing patterns
+- Customer purchasing patterns
 
----
+
 
 ## 4. Product Analysis
 
-Analyzed:
+Analyzed products based on:
 
-- Top-selling products
-- Product sales
-- Quantity sold
-- Product profit
-- Product rankings
+- Total Sales
+- Quantity Sold
+- Product Profit
+- Product Rankings
+- High-performing products
 - Low-performing products
 
----
 
 ## 5. Category Analysis
 
-Compared categories based on:
+Compared product categories using:
 
 - Sales
 - Quantity
 - Profit
 - Profitability
+- Contribution to overall performance
 
----
+
 
 ## 6. Regional Analysis
 
-Analyzed:
+Analyzed regional performance using:
 
-- Regional sales
-- Regional profit
-- Regional order volume
-- Regional contribution
+- Regional Sales
+- Regional Profit
+- Order Volume
+- Regional Contribution
 
----
+
 
 ## 7. Profitability Analysis
 
@@ -232,34 +232,32 @@ Analyzed:
 - Cost
 - Profit
 - Profit Margin
-- Product profitability
-- Category profitability
+- Product-level profitability
+- Category-level profitability
 
----
 
-#  Advanced Business Analysis
 
-Advanced SQL techniques were used to answer questions such as:
+# Advanced Business Analysis
+
+Advanced SQL techniques were used to answer practical business questions such as:
 
 - Which products rank highest by sales?
 - Which customers contribute the most revenue?
 - How does sales performance change over time?
 - Which products perform best within each category?
-- Which regions generate the highest sales?
+- Which regions generate higher sales?
 - How does a product compare with other products in its category?
 - What are the top-performing products within each region?
 
-These analyses demonstrate the practical application of SQL beyond basic data retrieval.
+These queries demonstrate the application of SQL for **business-oriented data analysis**, rather than only basic data retrieval.
 
----
+
 
 #  SQL Project Structure
 
 ```text
 SQL/
-│
-├── Dataset/
-│
+│---Datsets/ON_Drive
 ├── Analysis/
 │   ├── Data_Quality_Checks.sql
 │   ├── Overall_Sales_Analysis.sql
@@ -273,35 +271,92 @@ SQL/
 └── README.md
 ```
 
-> The SQL files are organized according to the business analysis performed in the project.
+> The datasets used for the SQL analysis are maintained separately in the project's Google Drive repository.
 
----
+
 
 #  Business Value
 
-The SQL analysis converts raw transactional data into structured business information that can be used to understand:
+The SQL analysis converts transactional data into structured business information that can be used to understand:
 
 - Revenue performance
 - Customer contribution
 - Product performance
+- Category performance
 - Regional trends
 - Profitability
 - Business opportunities
 
-The analysis demonstrates how SQL can be used to answer practical business questions from relational data.
+This demonstrates how SQL can be used to transform raw relational data into information that supports business analysis and decision-making.
 
----
 
-## Dataset
 
-The complete dataset is maintained separately due to file-size considerations.
+#  Dataset
 
-**Dataset Type:** Synthetic Quick-Commerce Sales Dataset
+The SQL analysis uses a **synthetic Quick-Commerce Sales Dataset**.
 
----
+The complete datasets are maintained separately because of file-size considerations.
 
-##  Disclaimer
+ **[Access Dataset & Supporting Files]([YOUR_GOOGLE_DRIVE_LINK](https://drive.google.com/drive/folders/1Hs6Un_FjMjEbBL34xnvaBJuGpY-F-zfn?usp=drive_link))**
 
-This project uses **synthetic data** created for educational and portfolio purposes.
+**Dataset Type:** Synthetic
+
+
+#  Key Learning
+
+Through this SQL analysis, I gained practical experience in:
+
+- Writing business-oriented SQL queries
+- Working with relational datasets
+- Performing data quality checks
+- Joining multiple tables
+- Using aggregate functions
+- Performing grouped analysis
+- Handling NULL values
+- Working with dates
+- Using subqueries and CTEs
+- Applying window functions
+- Ranking business entities
+- Converting business questions into SQL solutions
+
+
+
+#  Overall Project Flow
+
+```text
+Synthetic Dataset
+       ↓
+Excel Analysis
+       ↓
+SQL Database
+       ↓
+Data Quality Checks
+       ↓
+Business Queries
+       ↓
+Customer / Product / Category Analysis
+       ↓
+Regional & Profitability Analysis
+       ↓
+Advanced SQL Analysis
+       ↓
+Business Insights
+       ↓
+Python Analysis
+```
+
+
+
+##  Project Details
+Project: Quick-Commerce Sales Analytics
+Analysis: SQL
+Dataset: Synthetic
+Focus: Business & Sales Analytics
+Core Areas: Sales, Customers, Products, Categories, Regions & Profitability
+Advanced Topics: CTEs, Subqueries, Window Functions & Ranking
+
+## Disclaimer
+
+This project was created for **educational and portfolio purposes** using synthetic data.
 
 It does not contain real customer transactions, confidential company information, or proprietary business data.
