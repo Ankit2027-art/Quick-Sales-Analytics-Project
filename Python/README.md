@@ -253,7 +253,7 @@ outputs/
 
 
 
-# 💡 Business Insights
+#  Business Insights
 
 The Python analysis was used to identify patterns across:
 
