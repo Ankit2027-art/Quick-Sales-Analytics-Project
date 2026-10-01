@@ -98,8 +98,8 @@ Contains product-level transaction information such as:
 
 ### Environment
 
-- Vs Code
-
+- Visual Studio Code
+- Jupyter Notebook
 
 
 #  Analysis Workflow
