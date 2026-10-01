@@ -91,7 +91,7 @@ Contains product-level transaction information:
 
 
 
-# 🛠️ Tools & Excel Features
+#  Tools & Excel Features
 
 The analysis was performed using **Microsoft Excel**.
 
