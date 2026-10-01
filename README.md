@@ -487,9 +487,8 @@ Possible future extensions include:
 - Additional business KPIs
 - Automated reporting
 
----
 
-# ⚠️ Disclaimer
+#  Disclaimer
 
 This project was created for **educational and portfolio purposes** using synthetic data.
 
